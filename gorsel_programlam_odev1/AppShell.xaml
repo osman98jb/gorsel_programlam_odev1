@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="gorsel_programlam_odev1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:gorsel_programlam_odev1"
+    Shell.FlyoutBehavior="Flyout"
+    BackgroundColor="Yellow"
+    >
+
+    <ShellContent
+       Icon="ev.png"
+        
+        Title="Ana sayıfa"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="Ana sayıfa" />
+
+    <ShellContent
+        
+      Icon="hesap.png"
+        Title="Kride Hsaplama"
+        ContentTemplate="{DataTemplate local:krediHesaplama}"
+        Route="kredi_Hesaplama" />
+
+    <ShellContent
+    
+     Title="vücut kitl indeksi"
+     ContentTemplate="{DataTemplate local:Vucutkitle_Hesaplama}"
+     Route="Vucutkitle_Hesaplama" />
+
+
+    <ShellContent
+   Icon="renkler.png"
+     Title="Renk seçici"
+   
+     ContentTemplate="{DataTemplate local:Renk_secici}"
+     Route="Renk_secici" />
+
+
+    <ShellContent
+   
+     Title="Yapılacaklar"
+     ContentTemplate="{DataTemplate local:yapilacaklar}"
+     Route="yapilacaklar" />
+
+</Shell>
