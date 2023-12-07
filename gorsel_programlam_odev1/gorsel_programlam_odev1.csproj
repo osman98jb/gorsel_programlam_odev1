@@ -50,12 +50,10 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\ben.jpg" />
-	  <None Remove="Resources\Images\color.jpeg" />
 	  <None Remove="Resources\Images\ev.png" />
 	  <None Remove="Resources\Images\hesap.png" />
-	  <None Remove="Resources\Images\kredi.png" />
-	  <None Remove="Resources\Images\kredihespai.png" />
-	  <None Remove="Resources\Images\lotcolor.jpeg" />
+	  <None Remove="Resources\Images\kas.png" />
+	  <None Remove="Resources\Images\notepad.png" />
 	  <None Remove="Resources\Images\renkler.png" />
 	</ItemGroup>
 
@@ -64,7 +62,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="krediHesaplama.xaml">
+	  <MauiXaml Update="kerdi_Hesaplama.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Renk_secici.xaml">

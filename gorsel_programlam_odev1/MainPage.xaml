@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="gorsel_programlam_odev1.MainPage"
-             BackgroundColor="Black"
+             BackgroundColor="#1f1f1f"
              Title="Ana Sayıfa"
              
              
@@ -41,7 +41,8 @@
             <Button
                 x:Name="CounterBtn"
                 Text="ödev 1"
-                TextColor="Black"
+                TextColor="White"
+                BackgroundColor="Gold"
                 FontSize="40"
                 SemanticProperties.Hint="Counts the number of times you click"
                

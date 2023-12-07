@@ -3,15 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="gorsel_programlam_odev1.Vucutkitle_Hesaplama"
              Title="Vucutkitle_Hesaplama"
-             BackgroundColor="Black">
-    <VerticalStackLayout>
-        <Label 
-            Text="vki=kg/(boy*boy)"
-            TextColor="Yellow"
-            FontSize="25"
-            VerticalTextAlignment="Center"
-            TextTransform="Uppercase"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             BackgroundColor="#1f1f1f">
+
+    <StackLayout Margin="20">
+        <!-- Text displaying the formula -->
+        <Label Text="Vucut kutle hesapalama sistemi" FontSize="20" FontAttributes="Bold"
+               TextColor="Yellow" HorizontalTextAlignment="Center"/>
+
+        <!-- Slider for weight (KG) -->
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Kilonuzu giriniz (KG):" />
+            <Entry Placeholder="Kilonuzu giriniz (KG)" x:Name="WeightEntry" />
+        </StackLayout>
+
+        <!-- Input for height (cm) -->
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Boyunuzu giriniz (cm):"  />
+            <Entry Placeholder="Boyunuzu giriniz (cm)" x:Name="HeightEntry" />
+        </StackLayout>
+
+        <!-- Calculate button -->
+        <Button Text="Hesapla" TextColor="White" BackgroundColor="Gold" Clicked="OnCalculateClicked" />
+
+        <!-- Result -->
+        <Label Text="" TextColor="Gold" x:Name="ResultLabel" FontSize="18" FontAttributes="Bold" />
+    </StackLayout>
 </ContentPage>

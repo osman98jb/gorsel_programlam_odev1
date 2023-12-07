@@ -19,11 +19,11 @@
         
       Icon="hesap.png"
         Title="Kride Hsaplama"
-        ContentTemplate="{DataTemplate local:krediHesaplama}"
+        ContentTemplate="{DataTemplate local:kerdi_Hesaplama}"
         Route="kredi_Hesaplama" />
 
     <ShellContent
-    
+    Icon="kas.png"
      Title="vücut kitl indeksi"
      ContentTemplate="{DataTemplate local:Vucutkitle_Hesaplama}"
      Route="Vucutkitle_Hesaplama" />
@@ -38,7 +38,7 @@
 
 
     <ShellContent
-   
+   Icon="notepad.png"
      Title="Yapılacaklar"
      ContentTemplate="{DataTemplate local:yapilacaklar}"
      Route="yapilacaklar" />

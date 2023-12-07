@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gorsel_programlam_odev1.kerdi_Hesaplama"
+             Title="kerdi_Hesaplama"
+             Background="#1f1f1f">
+
+
+
+
+    <StackLayout Padding="20">
+
+        <Label Text="Kredi Hesaplama sistemi" FontSize="28" TextColor="Gold" HorizontalOptions="CenterAndExpand" Margin="0,10,0,20"/>
+
+        <Picker x:Name="LoanTypePicker" Title="kredi turu" VerticalOptions="CenterAndExpand" Margin="0,0,0,20">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>İhtiyaç Kredisi</x:String>
+                    <x:String>Konut Kredisi</x:String>
+                    <x:String>Taşıt Kredisi</x:String>
+                    <x:String>Ticari Kredisi</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Entry x:Name="LoanAmountEntry" Placeholder="Kredi Tutarı (TL)" Keyboard="Numeric" Margin="0,0,0,10"/>
+
+        <Entry x:Name="InterestRateEntry" Placeholder="Faiz Oranı (%)" Keyboard="Numeric" Margin="0,0,0,10"/>
+
+        <Entry x:Name="LoanTermEntry" Placeholder="Vade (Ay)" Keyboard="Numeric" Margin="0,0,0,20"/>
+
+    
+        <Button Text="Hesapla" Clicked="CalculateButton_Clicked" BackgroundColor="Gold" TextColor="White" CornerRadius="15" HeightRequest="50"/>
+
+    
+        <Label x:Name="ResultLabel" Text="" FontSize="18" TextColor="Gold" VerticalOptions="CenterAndExpand" Margin="0,20,0,0"/>
+
+    </StackLayout>
+
+
+
+</ContentPage>
